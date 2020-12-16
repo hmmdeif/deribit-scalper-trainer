@@ -8,3 +8,7 @@ N.B. Mark prices stabilise over the first 30 seconds on startup as the calculati
 ## Why WPF?
 
 Because I felt like it. I'll port it to MAUI later so people on non-Windows can run it.
+
+## Example
+
+![App Image](https://github.com/hmmdeif/deribit-scalper-trainer/blob/main/example.png?raw=true)
