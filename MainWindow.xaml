@@ -1,0 +1,33 @@
+﻿<Window x:Class="Deribit_Scalper_Trainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deribit_Scalper_Trainer"
+        mc:Ignorable="d"
+        Title="Scalper Trainer" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <local:ConnectionStatus Grid.Row="2" x:Name="connectionStatus" />
+
+        <Grid Grid.Row="0">
+            <local:OrderControl x:Name="orderControl" />
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <local:PositionControl Grid.Column="0" x:Name="positionControl" />
+            <local:HistoryControl Grid.Column="1" x:Name="historyControl" />
+        </Grid>
+    </Grid>
+    
+</Window>
